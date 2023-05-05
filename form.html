@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form </title>
+    <link rel="stylesheet" href="style.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+    <div class="topnav">
+      <img src="image/logo.png" class="logo">
+        <a class="active" href="home.html">Home</a>
+        <a href="book.html"> Tickets</a>
+        <a href="shows.html">Shows</a>
+        <a href="signin.html">Signin</a>
+      </div>
+  <div class="container">
+   <br><br>
+    <div class="title">Registration</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Registration Id
+                <label class="required"></label>
+            </span> 
+            <input type="text" id="reg_id" name="reg_id" placeholder="Enter registration ID" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Username
+                <label class="required"></label>
+            </span>
+            <input type="text" id="username" name="username" required pattern="[A-Za-z]+" placeholder="Enter your username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password
+                <label class="required"></label>
+            </span>
+            <input type="password" id="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email
+                <label class="required"></label>
+            </span>
+            <input type="email" id="email" name="email" placeholder="Enter email address" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Mobile Number
+                <label class="required"></label>
+            </span>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter mobile number" pattern="[0-9]{10}" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Date Of Birth
+                <label class="required"></label>
+            </span>
+            <input type="text" id="dob" name="dob" placeholder="Enter date of birth" pattern="^(0?[1-9]|[12][0-9]|3[01])(0?[1-9]|1[0-2])[0-9]{4}$" required>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit"onclick="window.location.href = 'shows.html' "value="Submit" >
+        </div>
+        <div class="button">
+            
+            <input type="reset" value="Cancel">
+          </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
